@@ -6,7 +6,7 @@ using System.Text;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Pedido
+    public class Pedido : Entidade
     {
         public int Id { get; set; }
 
@@ -33,5 +33,10 @@ namespace QuickBuy.Dominio.Entidades
 
 
         public ICollection<ItemPedido> ItensPedido { get; set; }
+
+        public override void Validate()
+        {
+            
+        }
     }
 }
